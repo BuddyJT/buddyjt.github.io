@@ -9,7 +9,7 @@ private-cloud visual system assets with SecraCloud public brand text.
 - `privacy.html`: SecraCloud Privacy Policy & Disclaimer
 - `404.html`: GitHub Pages-friendly not found page
 - `styles.css`: shared site styling
-- `assets/`: logo mark, favicon, and SVG background image
+- `assets/`: favicon-style logo artwork, SVG mark fallback, and SVG background image
 - `.nojekyll`: disables Jekyll processing on GitHub Pages
 
 ## Publish With GitHub Pages
