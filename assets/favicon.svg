@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">SecraCloud Favicon</title>
+  <desc id="desc">A simple SecraCloud private cloud favicon.</desc>
+  <defs>
+    <linearGradient id="bg" x1="42" y1="36" x2="470" y2="476" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#111820"/>
+      <stop offset=".55" stop-color="#07151A"/>
+      <stop offset="1" stop-color="#02070B"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="76" y1="138" x2="432" y2="370" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9BFFF3"/>
+      <stop offset=".52" stop-color="#22D6FF"/>
+      <stop offset="1" stop-color="#7B6DFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="104" fill="url(#bg)"/>
+  <path d="M139 322c-39 0-71-31-71-69 0-35 27-64 61-68 18-56 72-94 133-94 71 0 130 52 138 120 36 7 63 39 63 76 0 43-35 78-78 78H139Z" fill="url(#mark)"/>
+  <path d="M252 161 319 228 256 309 193 228Z" fill="#07151A" opacity=".92"/>
+  <path d="M252 190 287 228 256 268 225 228Z" fill="#22D6FF" opacity=".95"/>
+  <circle cx="365" cy="158" r="18" fill="#9BFFF3"/>
+</svg>
