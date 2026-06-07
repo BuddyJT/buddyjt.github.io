@@ -261,7 +261,7 @@ h1 {
 .status-band {
   background: var(--paper);
   color: var(--paper-ink);
-  padding: 58px 24px 68px;
+  padding: 58px 24px 92px;
 }
 
 .content-wrap,
@@ -306,15 +306,27 @@ h1 {
 }
 
 .contact-band {
-  padding: 66px 24px;
-  background: #02070b;
+  position: relative;
+  padding: 104px 24px 96px;
+  background:
+    linear-gradient(90deg, rgba(2, 7, 11, 0.96), rgba(2, 7, 11, 0.84) 52%, rgba(2, 7, 11, 0.7)),
+    linear-gradient(180deg, rgba(2, 7, 11, 1), rgba(7, 21, 26, 0.88)),
+    url("assets/secracloud-background.svg") center / cover no-repeat;
   color: var(--text);
+}
+
+.contact-band::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(155, 255, 243, 0.42), transparent);
 }
 
 .contact-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.7fr);
-  gap: 28px;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 0.74fr);
+  gap: 72px;
   align-items: center;
 }
 
@@ -326,18 +338,20 @@ h1 {
   max-width: 620px;
   margin-bottom: 0;
   color: #d8edf3;
-  font-size: 1.08rem;
+  font-size: 1.14rem;
 }
 
 .contact-panel {
-  padding: 24px;
+  padding: 34px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(7, 21, 26, 0.72);
+  background: rgba(7, 21, 26, 0.82);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(16px);
 }
 
 .contact-label {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   color: var(--aqua);
   font-size: 0.78rem;
   font-weight: 800;
@@ -346,8 +360,9 @@ h1 {
 
 .contact-email {
   display: inline-block;
+  padding: 12px 0;
   color: #ffffff;
-  font-size: 1.18rem;
+  font-size: 1.2rem;
   font-weight: 800;
   overflow-wrap: anywhere;
 }
@@ -359,9 +374,21 @@ h1 {
 }
 
 .contact-meta {
-  margin: 16px 0 0;
+  margin: 0;
   color: var(--muted);
   font-weight: 700;
+}
+
+.contact-note {
+  margin: 10px 0 0;
+  color: #cbe0e7;
+}
+
+.contact-divider {
+  width: 100%;
+  height: 1px;
+  margin: 24px 0;
+  background: linear-gradient(90deg, rgba(155, 255, 243, 0.34), transparent);
 }
 
 .policy-page {
@@ -506,12 +533,15 @@ h1 {
   }
 
   .contact-band {
+    padding-top: 76px;
+    padding-bottom: 78px;
     padding-right: 18px;
     padding-left: 18px;
   }
 
   .contact-layout {
     grid-template-columns: 1fr;
+    gap: 28px;
   }
 
   .section-heading h2 {
@@ -556,5 +586,13 @@ h1 {
 
   .signal-grid {
     grid-template-columns: 1fr;
+  }
+
+  .contact-panel {
+    padding: 26px;
+  }
+
+  .contact-email {
+    font-size: 1rem;
   }
 }
