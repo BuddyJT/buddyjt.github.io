@@ -5,7 +5,7 @@ private-cloud visual system assets with SecraCloud public brand text.
 
 ## Files
 
-- `index.html`: home page with Home, Privacy Policy, and Sign In navigation
+- `index.html`: home page with Home, Contact, Privacy Policy, and Sign In navigation
 - `privacy.html`: SecraCloud Privacy Policy & Disclaimer
 - `404.html`: GitHub Pages-friendly not found page
 - `styles.css`: shared site styling
@@ -26,6 +26,7 @@ domain after DNS is ready.
 ## Link Targets
 
 - Sign In links point to `https://cloud.secracloud.com`.
+- Contact links open email to `Gabrielconway@secracloud.com`.
 - Privacy links point to `privacy.html`.
 
 The policy copy is written for transparency during development. Have it reviewed
